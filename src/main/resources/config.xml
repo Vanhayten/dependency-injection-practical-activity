@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define the DAO bean -->
+    <bean id="dao" class="dao.DaoImpl"/>
+
+    <!-- Define the Métier bean with dependency injection -->
+    <bean id="metier" class="metier.MetierImpl">
+        <!-- Setter-based injection -->
+        <property name="dao" ref="dao"/>
+
+        <!-- <constructor-arg ref="dao"></constructor-arg> -->
+    </bean>
+</beans>
