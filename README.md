@@ -205,7 +205,7 @@ java -cp target/dependency-injection-demo-1.0-SNAPSHOT.jar framework.CustomFrame
 
 6. Custom Framework with Annotations:
 ```
-java -cp target/dependency-injection-demo-1.0-SNAPSHOT.jar framework.CustomFrameworkAnnotationTest
+java -cp target/dependency-injection-demo-1.0-SNAPSHOT.jar framework.framework.CustomFrameworkAnnotationTest
 ```
 
 ## Conclusion

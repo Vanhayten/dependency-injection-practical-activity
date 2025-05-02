@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component("metier")
 public class MetierImpl implements IMetier {
+    @Autowired
     private IDao dao;
 
     // Default constructor
