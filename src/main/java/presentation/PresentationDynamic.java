@@ -11,7 +11,7 @@ public class PresentationDynamic {
     public static void main(String[] args) {
         try {
             // Read configuration from a file
-            Scanner scanner = new Scanner(new File("src/main/resources/config.txt"));
+            Scanner scanner = new Scanner(new File("config.txt"));
 
             // Get the DAO class name from the config file
             String daoClassName = scanner.nextLine();
